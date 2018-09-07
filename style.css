@@ -1,0 +1,34 @@
+
+.meme {
+  color: teal;
+  font-family: cursive;
+  font-size: 2em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.red-text {
+  color: red;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.description h5 {
+  color: teal;
+}
+
+.script {
+  color: #00aeff;
+  font-size: 1em;
+  padding-top: 100px;
+  width: 95%;
+  font-family: Georgia;
+  text-align: center;
+}
