@@ -5,25 +5,6 @@
   font-size: 2em;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-.red-text {
-  color: red;
-}
-
-.cursive {
-  font-family: cursive;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
-.description h5 {
-  color: teal;
-}
-
 .script {
   color: #00aeff;
   font-size: 1em;
@@ -31,4 +12,15 @@
   width: 95%;
   font-family: Georgia;
   text-align: center;
+}
+
+.red-text {
+  color: red;
+}
+
+.teset {
+  background-color: #466995;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
