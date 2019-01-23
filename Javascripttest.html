@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<script>
+    function clkme()
+    {
+        var IDTEST = document.getElementById('IDTEST');
+        IDTEST.innerHTML = "test";
+        IDTEST.style.fontSize = "50px";
+        IDTEST.style.backgroundColor = "red";
+    }
+
+    function math()
+    {
+        var x = 3;
+        var y = 4;
+        var z = x + y;
+        var answer = document.getElementById('answer');
+        alert('The Answer Is ' + z);
+        answer.innerHTML = z;
+    }
+</script>
+
+<script>
+    function redtextadding()
+    {
+        var adding = document.getElementById('adding');
+        var x = 1413654626;
+        var y = 1575468123;
+        var z = x * y;
+        adding.innerHTML = z;
+        adding.style.color = "red";
+    }
+</script>
+
+<!-- REALTIME CLOCK -->
+
+<!-- REALTIME CLOCK -->
+
+<!-- REALTIME CLOCK -->
+<script>
+    var i = 1;
+    var d = "Date = "; //  set your counter to 1
+    //--------------------------------------
+    function myLoop()
+    { //  create a loop function
+        setTimeout(function()
+        { //  call a 3s setTimeout when the loop is called
+            document.getElementById('DATELOOPTEST').innerHTML = "Current " + d + Date(); //  your code here
+            i++; //  increment the counter
+            if (i < 99999)
+            { //  if the counter < 10, call the loop function
+                myLoop(); //  ..  again which will trigger another 
+            } //  ..  setTimeout()
+        }, 500);
+    }
+    //--------------------------------------
+    myLoop();
+</script>
+<!-- https://www.w3schools.com/js/js_date_methods.asp For time stuff -->
+
+<!-- REALTIME CLOCK -->
+
+<!-- REALTIME CLOCK -->
+
+<!-- REALTIME CLOCK -->
+
+<script>
+    var state = "minecraft";
+    function picchange()
+    {
+
+        if (state == "minecraft") {
+            document.getElementById('IMG').src = 'https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/87/18/40/87184055-46fb-5b30-1bec-4fb34d03de3f/AppIcon-1x_U007emarketing-85-220-8.png/246x0w.jpg';
+            document.getElementById('meme1').innerHTML = "MC 2";
+            state = "minecraft 2";
+        }
+
+        else if (state == "minecraft 2") {
+            document.getElementById('IMG').src = 'https://minecraft.net/static/pages/img/minecraft-hero-og.c5517b7973e1.jpg';
+            document.getElementById('meme1').innerHTML = "MC";
+            state = "minecraft";
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+    <button type="button" onclick=clkme()>Text updater</button>
+    <button type="button" onclick=math()>Arithmetic updater</button>
+    <button type="button" onclick=redtextadding()>Arithmetic updater V2</button>
+    <button id="meme1" type="button" onclick=picchange()>If test</button>
+
+    <p id="IDTEST">Waiting for Text Update</p>
+    <p id="answer">Waiting for Arithmetic update</p>
+    <p id="adding">Waiting for Arithmetic update V2</p>
+    <p id="name">Waiting for If Test</p>
+
+</body>
+
+<body>
+    <p id="DATELOOPTEST">Waiting for date update</p>
+    <p>Normal Day 3rd 9:48 --> 10:46</p>
+    <p>Wednesday 3rd 10:27 --> 11:17</p>
+</body>
+
+<body>
+    <img id="IMG" src="" style="width:100px">
+</body>
+
+<body>
+    <script>
+        var dankbutton = document.createElement('button');
+        var dankbuttontext = document.createTextNode("DANKBUTTON");
+        dankbutton.appendChild(dankbuttontext);
+        document.body.appendChild(dankbutton);
+        dankbutton.setAttribute('onclick', 'picchange()');
+        dankbutton.setAttribute('id', 'dankbutton');
+    </script>
+    <button id='showimg' type="button" onclick=showimg()>showimg</button>
+    <button id='hideimg' type="button" onclick=hideimg()>hideimg</button>
+</body>
+
+<script>
+    function showimg()
+    {
+        document.getElementById('IMG').style.display = 'block'
+    }
+    function hideimg()
+    {
+        document.getElementById('IMG').style.display = 'none'
+    }
+</script>
+
+
+
+
+
+
+
+<!--                    Clock backup
+REALTIME CLOCK
+REALTIME CLOCK
+REALTIME CLOCK
+<script>
+    var i = 1;                                                                                          //  set your counter to 1
+//--------------------------------------
+    function myLoop () {                                                                                //  create a loop function
+        setTimeout(function () {                                                                        //  call a 3s setTimeout when the loop is called
+            document.getElementById('DATELOOPTEST').innerHTML = Date();                                 //  your code here
+            i++;                                                                                        //  increment the counter
+            if (i < 10000) {                                                                            //  if the counter < 10, call the loop function
+            myLoop();                                                                                   //  ..  again which will trigger another 
+            }                                                                                           //  ..  setTimeout()
+        }, 500);
+    }
+//--------------------------------------
+myLoop();
+</script>
+REALTIME CLOCK 
+REALTIME CLOCK 
+REALTIME CLOCK 
+-->
